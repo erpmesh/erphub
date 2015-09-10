@@ -1,6 +1,6 @@
 <!-- resources/views/auth/password.blade.php -->
 
-<form method="POST" action="/password/email">
+<form method="POST" action="{{ url('password/email') }}">
     {!! csrf_field() !!}
 
     <div>
