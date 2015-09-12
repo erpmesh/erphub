@@ -32,3 +32,7 @@ Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
 Route::get('dashboard', 'DashboardController@index');
+
+
+Route::get('api/v1/trigger', 'Api\TriggerController@index');
+Route::put('api/v1/trigger', 'Api\TriggerController@submit');
