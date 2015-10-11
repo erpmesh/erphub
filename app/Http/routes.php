@@ -36,3 +36,6 @@ Route::get('dashboard', 'DashboardController@index');
 
 Route::get('api/v1/trigger', 'Api\TriggerController@index');
 Route::put('api/v1/trigger', 'Api\TriggerController@submit');
+
+Route::get('api/v1/test', 'Api\FeedController@test');
+Route::put('api/v1/feed', 'Api\FeedController@submit');
